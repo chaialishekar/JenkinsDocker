@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+#!/bin/bash
+FROM --platform=linux/arm64/v8 ubuntu:latest
 
 # Install nginx and dependencies
 RUN apt-get update && \
